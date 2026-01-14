@@ -11,7 +11,7 @@ This project delivers a secure, distributed **WordPress-based student portal** h
 The core research focuses on enhancing distributed systems security by combining cloud-native logging (**AWS CloudTrail**, **Azure Log Analytics**) with **Splunk SOAR** to automate threat detection and incident response.
 
 ### Key Features
-- **Hybrid Cloud Architecture:** Leverages AWS compute and Azure database services[cite: 35].
+- **Hybrid Cloud Architecture:** Leverages AWS compute and Azure database services.
 - **Automated Security:** Implements Splunk SOAR playbooks to detect and respond to unauthorized access (e.g., failed logins).
 - **Centralized Logging:** Aggregates logs from multiple clouds into a single dashboard with >95% event capture accuracy.
 - **Scalable Storage:** Offloads media to AWS S3 using the WP Offload Media plugin.
@@ -40,17 +40,17 @@ The core research focuses on enhancing distributed systems security by combining
 ### Step 1: Web Portal (AWS)
 1. Launch an **EC2 t2.micro** instance.
 2. Install **Apache**, **PHP**, and **WordPress**.
-3. [cite_start]Install the **LearnPress** plugin for course management.
+3. Install the **LearnPress** plugin for course management.
 
 ### Step 2: Database (Azure)
 1. Provision an **Azure VM** (Ubuntu 22.04).
-2. Install **MySQL Server** and configure tables for WordPress[cite: 122].
+2. Install **MySQL Server** and configure tables for WordPress.
 3. Set up **WireGuard** to secure the connection between AWS EC2 and Azure VM.
 
 ### Step 3: Storage Integration
 1. Create an S3 bucket: `student-portal-content`.
 2. Configure **IAM roles** for secure access.
-3. [cite_start]Install **WP Offload Media Lite** on WordPress to sync media to S3.
+3. Install **WP Offload Media Lite** on WordPress to sync media to S3.
 
 ### Step 4: Logging & SOAR Setup
 1. [cite_start]**AWS:** Enable **CloudTrail** to log events to a dedicated S3 bucket (`student-portal-logs`).
